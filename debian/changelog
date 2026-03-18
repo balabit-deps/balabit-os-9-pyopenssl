@@ -1,3 +1,12 @@
+pyopenssl (21.0.0-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Unhandled exceptions in set_tlsext_servername_callback
+    - debian/patches/CVE-2026-27448.patch: handle exceptions in callbacks
+      in src/OpenSSL/SSL.py, tests/test_ssl.py.
+    - CVE-2026-27448
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 18 Mar 2026 14:11:32 -0400
+
 pyopenssl (21.0.0-1) unstable; urgency=medium
 
   * New upstream release.
